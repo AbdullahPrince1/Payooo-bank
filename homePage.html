@@ -49,36 +49,42 @@
     <!-- different payment methods -->
     <div class="px-3 grid grid-cols-3 gap-4">
       <div
+        id="addMoneyElement"
         class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/wallet1.png" alt="" />
         <p class="text-sm">Add money</p>
       </div>
       <div
+        id="cashOutElement"
         class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/send1.png" alt="" />
         <p class="text-sm">Cashout</p>
       </div>
       <div
+        id="transferMoneyElement"
         class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/money1.png" alt="" />
         <p class="text-sm">Transfer Money</p>
       </div>
       <div
+      id="getBonusElement"
         class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/bonus1.png" alt="" />
         <p class="text-sm">Get Bonus</p>
       </div>
       <div
+      id="payBillElement"
         class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/purse1.png" alt="" />
         <p class="text-sm">Pay Bill</p>
       </div>
       <div
+      id="transactionElement"
         class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/transaction1.png" alt="" />
@@ -86,8 +92,8 @@
       </div>
     </div>
     <!-- add money -->
-    <div class="px-3 hidden">
-      <h1 class="font-semibold text-lg">Add Money</h1>
+    <div class="px-3 toggleParent" id="addMoneyParent">
+      <h1 class="font-semibold text-lg mt-4 mb-3">Add Money</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div class="">
           <h1 class="font-semibold text-lg mb-3">Select a Bank</h1>
@@ -140,7 +146,7 @@
       </form>
     </div>
     <!-- Cash out -->
-    <div class="px-3 hidden">
+    <div class="px-3 toggleParent" id="cashOutParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Cash out</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div>
@@ -183,7 +189,7 @@
       </form>
     </div>
     <!-- Transfer money -->
-    <div class="px-3 hidden">
+    <div class="px-3 toggleParent" id="transferMoneyParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Transfer Money</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div>
@@ -226,7 +232,7 @@
       </form>
     </div>
     <!-- Get bonus -->
-    <div class="px-3 hidden">
+    <div class="px-3 toggleParent" id="getBonusParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Get Bonus</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div>
@@ -248,7 +254,7 @@
       </form>
     </div>
     <!-- Pay bill -->
-    <div class="px-3 ">
+    <div class="px-3 toggleParent" id="payBillParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Pay Bill</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div class="">
