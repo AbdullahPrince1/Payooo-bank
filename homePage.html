@@ -47,52 +47,50 @@
       </p>
     </div>
     <!-- different payment methods -->
-    <div class="px-3 grid grid-cols-3 gap-4">
+    <div class="px-3 grid grid-cols-3 gap-4 pb-3">
+      <!-- add money -->
       <div
         id="addMoneyElement"
-        class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
+        class="allBtnColor flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/wallet1.png" alt="" />
         <p class="text-sm">Add money</p>
       </div>
+      <!-- cashout -->
       <div
         id="cashOutElement"
-        class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
+        class="allBtnColor flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/send1.png" alt="" />
         <p class="text-sm">Cashout</p>
       </div>
+      <!-- transfer money -->
       <div
         id="transferMoneyElement"
-        class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
-      >
-        <img src="./assets/money1.png" alt="" />
-        <p class="text-sm">Transfer Money</p>
-      </div>
-      <div
-      id="getBonusElement"
-        class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
+        class="allBtnColor flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/bonus1.png" alt="" />
-        <p class="text-sm">Get Bonus</p>
+        <p class="text-sm">Transfer money</p>
       </div>
+      <!-- pay bill -->
       <div
-      id="payBillElement"
-        class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
+        id="payBillElement"
+        class="allBtnColor flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/purse1.png" alt="" />
         <p class="text-sm">Pay Bill</p>
       </div>
+      <!-- transaction -->
       <div
-      id="transactionElement"
-        class="flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
+        id="transactionElement"
+        class="allBtnColor flex items-center justify-center flex-col border-[#0808081A] border-1 p-4 rounded-[12px] bg-[rgba(255,255,255,1)]"
       >
         <img src="./assets/transaction1.png" alt="" />
         <p class="text-sm">Transaction</p>
       </div>
     </div>
     <!-- add money -->
-    <div class="px-3 toggleParent" id="addMoneyParent">
+    <div class="px-3 toggleParent hidden" id="addMoneyParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Add Money</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div class="">
@@ -146,7 +144,7 @@
       </form>
     </div>
     <!-- Cash out -->
-    <div class="px-3 toggleParent" id="cashOutParent">
+    <div class="px-3 toggleParent hidden" id="cashOutParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Cash out</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div>
@@ -189,7 +187,7 @@
       </form>
     </div>
     <!-- Transfer money -->
-    <div class="px-3 toggleParent" id="transferMoneyParent">
+    <div class="px-3 toggleParent hidden" id="transferMoneyParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Transfer Money</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div>
@@ -232,7 +230,7 @@
       </form>
     </div>
     <!-- Get bonus -->
-    <div class="px-3 toggleParent" id="getBonusParent">
+    <div class="px-3 toggleParent hidden" id="getBonusParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Get Bonus</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div>
@@ -254,7 +252,7 @@
       </form>
     </div>
     <!-- Pay bill -->
-    <div class="px-3 toggleParent" id="payBillParent">
+    <div class="px-3 toggleParent hidden" id="payBillParent">
       <h1 class="font-semibold text-lg mt-4 mb-3">Pay Bill</h1>
       <form action="" class="flex flex-col gap-4 justify-center bg-white p-6">
         <div class="">
@@ -307,6 +305,16 @@
         </button>
       </form>
     </div>
+    <div>
+      <img src="./assets/transaction1.png" alt="">
+      <div>
+        <h1></h1>
+        <p></p>
+
+
+      </div>
+    </div>
+
+    <script src="./homePage.js"></script>
   </body>
-  <script src="./homePage.js"></script>
 </html>

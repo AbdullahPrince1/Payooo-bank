@@ -39,8 +39,8 @@ function toggleMenu(id) {
   const form = document.getElementsByClassName("toggleParent");
   for (const forms of form) {
     forms.style.display = "none";
+    document.getElementById(id).style.display = "block";
   }
-  document.getElementById(id).style.display = "block";
 }
 document
   .getElementById("addMoneyElement")
@@ -57,18 +57,30 @@ document
   .addEventListener("click", function () {
     toggleMenu("transferMoneyParent");
   });
+
+function addColor(id) {
+  const items = document.getElementsByClassName("allBtnColor");
+  for (const item of items) {
+    item.style.backgroundColor = "rgba(255, 255, 255, 1)";
+    item.style.border = "1px solid rgba(8, 8, 8, 0.1)";
+  }
+  document.getElementById(id).style.border = "1px solid #0874F2";
+
+  document.getElementById(id).style.backgroundColor = "rgba(8, 116, 242, 0.05)";
+}
+
 document
-  .getElementById("getBonusElement")
+  .getElementById("addMoneyElement")
   .addEventListener("click", function () {
-    toggleMenu("getBonusParent");
+    addColor("addMoneyElement");
   });
 document
-  .getElementById("payBillElement")
+  .getElementById("cashOutElement")
   .addEventListener("click", function () {
-    toggleMenu("payBillParent");
+    addColor("cashOutElement");
   });
-// document
-//   .getElementById("transactionElement")
-//   .addEventListener("click", function () {
-//     toggleMenu("getBonusParent");
-//   });
+document
+  .getElementById("transferMoneyElement")
+  .addEventListener("click", function () {
+    addColor("transferMoneyElement");
+  });
